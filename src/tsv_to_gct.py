@@ -3,7 +3,7 @@ import sys
 import os
 import argparse
 
-from .submodules import Tsv
+from .submodules.Tsv import Tsv
 
 def main():
     parser = argparse.ArgumentParser(description='Convert easy to use long formated .tsv files into the difficult to use gct format.')
