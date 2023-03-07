@@ -13,9 +13,18 @@ def main():
                         help='The element locator that links elements to the annotation file.')
     parser.add_argument('--valuesFrom', default='ProteinAbundance',
                         help='Column to get values from.')
+    parser.add_argument('--debug', default=None, choices=['pudb', 'pdb'],
+                        help='Start main method in selected debugger.')
     parser.add_argument('tsv', help='Long formated .tsv file')
     parser.add_argument('annotations', help='Annotations file corresponding to `tsv`.')
     args = parser.parse_args()
+
+    if args.debug == 'pudb':
+        import pudb as debugger
+        debugger.set_trace()
+    elif args.debug == 'pdb':
+        print('What is wrong with you?\nYou should be using pudb you jack rabbit!')
+        sys.exit(1)
 
     tsv = Tsv()
     tsv.read(args.tsv, args.namesFrom, args.namePathFrom, args.valuesFrom)

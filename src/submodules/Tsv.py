@@ -1,6 +1,7 @@
 
 import sys
 import csv
+import re
 
 
 def detect_dialect(fname):
@@ -24,7 +25,7 @@ class Tsv():
             reader = csv.reader(inF, dialect=detect_dialect(fname))
 
             # process header row
-            headers = {cell: i for i, cell in enumerate(next(reader))}
+            headers = {re.sub(r'\s+', '', cell): i for i, cell in enumerate(next(reader))}
             self.headers = {cell: i for cell, i in headers.items() if cell not in (names_from, values_from, name_path_from)}
             for col in [names_from, values_from, name_path_from]:
                 if col not in headers:
@@ -90,7 +91,7 @@ class Tsv():
         for obs in self.data.values():
             for replicate in obs:
                 replicates.add(replicate)
-        return list(replicates)
+        return sorted(list(replicates))
 
 
     def write_gct(self, fname):
@@ -108,8 +109,8 @@ class Tsv():
             # print annotations
             for annotation in self.annotation_cols:
                 outF.write(f'{annotation}\t{key_col_NAs}')
-                for name, locator in self.name_to_locator.items():
-                    outF.write('\t{}'.format(self.annotations[locator][annotation]))
+                for rep in data_cols:
+                    outF.write('\t{}'.format(self.annotations[self.name_to_locator[rep]][annotation]))
                 outF.write('\n')
 
             # print values
