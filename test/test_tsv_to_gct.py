@@ -2,8 +2,10 @@
 import unittest
 import os
 import tempfile
+import sys
 
-from .context import md5_sum, src, DATA_DIR
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from context import md5_sum, src, DATA_DIR
 from src.submodules.Tsv import Tsv
 
 
@@ -16,7 +18,6 @@ class TestTsv(unittest.TestCase):
     def test_can_read_tsv(self):
         tsv = Tsv()
         self.assertTrue(tsv.read(TestTsv.PROTEIN_TSV, *TestTsv.PROTEIN_ARGS))
-
 
     def test_name_to_locator(self):
         for _ in range(100):
