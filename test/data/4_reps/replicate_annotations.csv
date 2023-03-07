@@ -1,0 +1,5 @@
+ElementLocator,BioReplicate,Concentration
+Replicate:/rep_1,1,100
+Replicate:/rep_4,4,200
+Replicate:/rep_3,3,300
+Replicate:/rep_2,2,400

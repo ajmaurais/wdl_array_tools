@@ -1,0 +1,41 @@
+Protein	Protein Description	Protein Gene	Replicate Name	Replicate Locator	Protein Abundance
+sp|A0A087WSY4|HV432_HUMAN	Immunoglobulin heavy variable 4-30-2 OS=Homo sapiens OX=9606 GN=IGHV4-30-2 PE=3 SV=1	IGHV4-30-2	rep_1	Replicate:/rep_1	1.4338E+7
+sp|A0A087WSY4|HV432_HUMAN	Immunoglobulin heavy variable 4-30-2 OS=Homo sapiens OX=9606 GN=IGHV4-30-2 PE=3 SV=1	IGHV4-30-2	rep_2	Replicate:/rep_2	4.4893E+6
+sp|A0A087WSY4|HV432_HUMAN	Immunoglobulin heavy variable 4-30-2 OS=Homo sapiens OX=9606 GN=IGHV4-30-2 PE=3 SV=1	IGHV4-30-2	rep_4	Replicate:/rep_4	2.7842E+6
+sp|A0A087WSY4|HV432_HUMAN	Immunoglobulin heavy variable 4-30-2 OS=Homo sapiens OX=9606 GN=IGHV4-30-2 PE=3 SV=1	IGHV4-30-2	rep_3	Replicate:/rep_3	7.5483E+6
+sp|A0A075B6S6|KVD30_HUMAN	Immunoglobulin kappa variable 2D-30 OS=Homo sapiens OX=9606 GN=IGKV2D-30 PE=3 SV=1	IGKV2D-30	rep_1	Replicate:/rep_1	#N/A
+sp|A0A075B6S6|KVD30_HUMAN	Immunoglobulin kappa variable 2D-30 OS=Homo sapiens OX=9606 GN=IGKV2D-30 PE=3 SV=1	IGKV2D-30	rep_2	Replicate:/rep_2	#N/A
+sp|A0A075B6S6|KVD30_HUMAN	Immunoglobulin kappa variable 2D-30 OS=Homo sapiens OX=9606 GN=IGKV2D-30 PE=3 SV=1	IGKV2D-30	rep_4	Replicate:/rep_4	#N/A
+sp|A0A075B6S6|KVD30_HUMAN	Immunoglobulin kappa variable 2D-30 OS=Homo sapiens OX=9606 GN=IGKV2D-30 PE=3 SV=1	IGKV2D-30	rep_3	Replicate:/rep_3	#N/A
+sp|A0A075B6R2|HV404_HUMAN	Immunoglobulin heavy variable 4-4 OS=Homo sapiens OX=9606 GN=IGHV4-4 PE=3 SV=2	IGHV4-4	rep_1	Replicate:/rep_1	1.4338E+7
+sp|A0A075B6R2|HV404_HUMAN	Immunoglobulin heavy variable 4-4 OS=Homo sapiens OX=9606 GN=IGHV4-4 PE=3 SV=2	IGHV4-4	rep_2	Replicate:/rep_2	4.4893E+6
+sp|A0A075B6R2|HV404_HUMAN	Immunoglobulin heavy variable 4-4 OS=Homo sapiens OX=9606 GN=IGHV4-4 PE=3 SV=2	IGHV4-4	rep_4	Replicate:/rep_4	2.7842E+6
+sp|A0A075B6R2|HV404_HUMAN	Immunoglobulin heavy variable 4-4 OS=Homo sapiens OX=9606 GN=IGHV4-4 PE=3 SV=2	IGHV4-4	rep_3	Replicate:/rep_3	7.5483E+6
+sp|A0A075B6H7|KV37_HUMAN	Probable non-functional immunoglobulin kappa variable 3-7 OS=Homo sapiens OX=9606 GN=IGKV3-7 PE=1 SV=1	IGKV3-7	rep_1	Replicate:/rep_1	2.8781E+8
+sp|A0A075B6H7|KV37_HUMAN	Probable non-functional immunoglobulin kappa variable 3-7 OS=Homo sapiens OX=9606 GN=IGKV3-7 PE=1 SV=1	IGKV3-7	rep_2	Replicate:/rep_2	3.6955E+8
+sp|A0A075B6H7|KV37_HUMAN	Probable non-functional immunoglobulin kappa variable 3-7 OS=Homo sapiens OX=9606 GN=IGKV3-7 PE=1 SV=1	IGKV3-7	rep_4	Replicate:/rep_4	6.8916E+7
+sp|A0A075B6H7|KV37_HUMAN	Probable non-functional immunoglobulin kappa variable 3-7 OS=Homo sapiens OX=9606 GN=IGKV3-7 PE=1 SV=1	IGKV3-7	rep_3	Replicate:/rep_3	1.3323E+8
+sp|A0A075B6I9|LV746_HUMAN	Immunoglobulin lambda variable 7-46 OS=Homo sapiens OX=9606 GN=IGLV7-46 PE=3 SV=4	IGLV7-46	rep_1	Replicate:/rep_1	9.5436E+6
+sp|A0A075B6I9|LV746_HUMAN	Immunoglobulin lambda variable 7-46 OS=Homo sapiens OX=9606 GN=IGLV7-46 PE=3 SV=4	IGLV7-46	rep_2	Replicate:/rep_2	7.8225E+6
+sp|A0A075B6I9|LV746_HUMAN	Immunoglobulin lambda variable 7-46 OS=Homo sapiens OX=9606 GN=IGLV7-46 PE=3 SV=4	IGLV7-46	rep_4	Replicate:/rep_4	2.5778E+6
+sp|A0A075B6I9|LV746_HUMAN	Immunoglobulin lambda variable 7-46 OS=Homo sapiens OX=9606 GN=IGLV7-46 PE=3 SV=4	IGLV7-46	rep_3	Replicate:/rep_3	4.1142E+6
+sp|A0A075B6P5|KV228_HUMAN	Immunoglobulin kappa variable 2-28 OS=Homo sapiens OX=9606 GN=IGKV2-28 PE=3 SV=1	IGKV2-28	rep_1	Replicate:/rep_1	#N/A
+sp|A0A075B6P5|KV228_HUMAN	Immunoglobulin kappa variable 2-28 OS=Homo sapiens OX=9606 GN=IGKV2-28 PE=3 SV=1	IGKV2-28	rep_2	Replicate:/rep_2	#N/A
+sp|A0A075B6P5|KV228_HUMAN	Immunoglobulin kappa variable 2-28 OS=Homo sapiens OX=9606 GN=IGKV2-28 PE=3 SV=1	IGKV2-28	rep_4	Replicate:/rep_4	#N/A
+sp|A0A075B6P5|KV228_HUMAN	Immunoglobulin kappa variable 2-28 OS=Homo sapiens OX=9606 GN=IGKV2-28 PE=3 SV=1	IGKV2-28	rep_3	Replicate:/rep_3	#N/A
+sp|A0A075B767|PAL4H_HUMAN	Peptidyl-prolyl cis-trans isomerase A-like 4H OS=Homo sapiens OX=9606 GN=PPIAL4H PE=3 SV=1	PPIAL4H	rep_1	Replicate:/rep_1	2.5031E+6
+sp|A0A075B767|PAL4H_HUMAN	Peptidyl-prolyl cis-trans isomerase A-like 4H OS=Homo sapiens OX=9606 GN=PPIAL4H PE=3 SV=1	PPIAL4H	rep_2	Replicate:/rep_2	0.0000E+0
+sp|A0A075B767|PAL4H_HUMAN	Peptidyl-prolyl cis-trans isomerase A-like 4H OS=Homo sapiens OX=9606 GN=PPIAL4H PE=3 SV=1	PPIAL4H	rep_4	Replicate:/rep_4	5.8060E+6
+sp|A0A075B767|PAL4H_HUMAN	Peptidyl-prolyl cis-trans isomerase A-like 4H OS=Homo sapiens OX=9606 GN=PPIAL4H PE=3 SV=1	PPIAL4H	rep_3	Replicate:/rep_3	5.6383E+6
+sp|A0A075B6S2|KVD29_HUMAN	Immunoglobulin kappa variable 2D-29 OS=Homo sapiens OX=9606 GN=IGKV2D-29 PE=3 SV=1	IGKV2D-29	rep_1	Replicate:/rep_1	#N/A
+sp|A0A075B6S2|KVD29_HUMAN	Immunoglobulin kappa variable 2D-29 OS=Homo sapiens OX=9606 GN=IGKV2D-29 PE=3 SV=1	IGKV2D-29	rep_2	Replicate:/rep_2	#N/A
+sp|A0A075B6S2|KVD29_HUMAN	Immunoglobulin kappa variable 2D-29 OS=Homo sapiens OX=9606 GN=IGKV2D-29 PE=3 SV=1	IGKV2D-29	rep_4	Replicate:/rep_4	#N/A
+sp|A0A075B6S2|KVD29_HUMAN	Immunoglobulin kappa variable 2D-29 OS=Homo sapiens OX=9606 GN=IGKV2D-29 PE=3 SV=1	IGKV2D-29	rep_3	Replicate:/rep_3	#N/A
+sp|A0A075B6K5|LV39_HUMAN	Immunoglobulin lambda variable 3-9 OS=Homo sapiens OX=9606 GN=IGLV3-9 PE=3 SV=1	IGLV3-9	rep_1	Replicate:/rep_1	#N/A
+sp|A0A075B6K5|LV39_HUMAN	Immunoglobulin lambda variable 3-9 OS=Homo sapiens OX=9606 GN=IGLV3-9 PE=3 SV=1	IGLV3-9	rep_2	Replicate:/rep_2	#N/A
+sp|A0A075B6K5|LV39_HUMAN	Immunoglobulin lambda variable 3-9 OS=Homo sapiens OX=9606 GN=IGLV3-9 PE=3 SV=1	IGLV3-9	rep_4	Replicate:/rep_4	#N/A
+sp|A0A075B6K5|LV39_HUMAN	Immunoglobulin lambda variable 3-9 OS=Homo sapiens OX=9606 GN=IGLV3-9 PE=3 SV=1	IGLV3-9	rep_3	Replicate:/rep_3	#N/A
+sp|A0A024RBG1|NUD4B_HUMAN	Diphosphoinositol polyphosphate phosphohydrolase NUDT4B OS=Homo sapiens OX=9606 GN=NUDT4B PE=3 SV=1	NUDT4B	rep_1	Replicate:/rep_1	4.9815E+5
+sp|A0A024RBG1|NUD4B_HUMAN	Diphosphoinositol polyphosphate phosphohydrolase NUDT4B OS=Homo sapiens OX=9606 GN=NUDT4B PE=3 SV=1	NUDT4B	rep_2	Replicate:/rep_2	3.6493E+5
+sp|A0A024RBG1|NUD4B_HUMAN	Diphosphoinositol polyphosphate phosphohydrolase NUDT4B OS=Homo sapiens OX=9606 GN=NUDT4B PE=3 SV=1	NUDT4B	rep_4	Replicate:/rep_4	1.4940E+6
+sp|A0A024RBG1|NUD4B_HUMAN	Diphosphoinositol polyphosphate phosphohydrolase NUDT4B OS=Homo sapiens OX=9606 GN=NUDT4B PE=3 SV=1	NUDT4B	rep_3	Replicate:/rep_3	1.3252E+6
