@@ -13,6 +13,10 @@ def main():
                         help='The element locator that links elements to the annotation file.')
     parser.add_argument('--valuesFrom', default='ProteinAbundance',
                         help='Column to get values from.')
+    parser.add_argument('--idCols', default=None,
+                        help='The columns to get row ids from. '
+                             'Should be a string with column names seperated by commas.')
+    parser.add_argument('--idSep', default='_', help='The seperator in case of multiple idCols.')
     parser.add_argument('--debug', default=None, choices=['pudb', 'pdb'],
                         help='Start main method in selected debugger.')
     parser.add_argument('tsv', help='Long formated .tsv file')
@@ -30,8 +34,11 @@ def main():
     tsv.read(args.tsv, args.namesFrom, args.namePathFrom, args.valuesFrom)
     tsv.read_annotations(args.annotations)
 
+    if args.idCols:
+        tsv.set_id_cols([x.strip() for x in args.idCols.split(',')])
+
     ofname = os.path.splitext(os.path.basename(args.tsv))[0] + '.gct'
-    tsv.write_gct(ofname)
+    tsv.write_gct(ofname, id_sep=args.idSep)
 
 
 if __name__ == '__main__':

@@ -1,7 +1,7 @@
 
 import sys
 import csv
-import re
+from hashlib import md5
 
 
 def detect_dialect(fname):
@@ -16,6 +16,17 @@ class Tsv():
         self.headers = dict()
         self.name_to_locator = dict()
         self.annotations = dict()
+        self._id_cols = None
+
+    
+    def set_id_cols(self, cols):
+        id_cols = list()
+        for col in cols:
+            if col in self.headers:
+                id_cols.append(self.headers[col])
+            else:
+                raise KeyError(f'{col} is an unknown column!')
+        self._id_cols = tuple(id_cols)
 
 
     def read(self, fname: str, names_from: str, name_path_from: str, values_from: str):
@@ -25,7 +36,7 @@ class Tsv():
             reader = csv.reader(inF, dialect=detect_dialect(fname))
 
             # process header row
-            headers = {re.sub(r'\s+', '', cell): i for i, cell in enumerate(next(reader))}
+            headers = {cell: i for i, cell in enumerate(next(reader))}
             self.headers = {cell: i for cell, i in headers.items() if cell not in (names_from, values_from, name_path_from)}
             for col in [names_from, values_from, name_path_from]:
                 if col not in headers:
@@ -94,7 +105,13 @@ class Tsv():
         return sorted(list(replicates))
 
 
-    def write_gct(self, fname):
+    def _get_row_id(self, element, sep='_'):
+        if self._id_cols is None:
+            return md5('_'.join(element).encode('utf-8')).hexdigest()
+        return sep.join([element[i] for i in self._id_cols])
+
+
+    def write_gct(self, fname, id_sep='_'):
         
         data_cols = self._get_data_columns()
         key_col_NAs = '\t'.join(['NA'] * len(self.headers))
@@ -115,6 +132,7 @@ class Tsv():
 
             # print values
             for element, values in self.data.items():
+                outF.write('{}\t'.format(self._get_row_id(element, sep=id_sep)))
                 outF.write('\t'.join(element))
                 for col in data_cols:
                     outF.write('\t{}'.format(values[col] if col in values else 'NA'))
