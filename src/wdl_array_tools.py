@@ -1,6 +1,7 @@
 
 import argparse
 import sys
+from os.path import basename
 import re
 import json
 from typing import List, Set
@@ -42,6 +43,8 @@ Available commands:
         parser = argparse.ArgumentParser(description=Main.ARRAYS_OVERLAP_DESCRIPTION)
         parser.add_argument('--sep', default=r'\s*,\s*',
                             help='A RegEx to separate elements in input arrays. Default is "\s*,\s*"')
+        parser.add_argument('--use_basename', default = False, action='store_true',
+                            help='Use file basename of array elements? Default is false.')
         parser.add_argument('-a', '--add_array', action='append', default=None,
                             help='Add array formated as string with elements seperated by commas')
         parser.add_argument('-i', '--input_json', default=None,
@@ -63,6 +66,10 @@ Available commands:
         elif args.add_array:
             split_re = re.compile(args.sep)
             arrays += [set(split_re.split(s.strip())) for s in args.add_array]
+
+        if args.use_basename:
+            for i in range(len(arrays)):
+                arrays[i] = {basename(x) for x in arrays[i]}
         
         if overlap := arrays_overlap(arrays):
             sys.stderr.write(f'Overlapping elements found in arrays:\n{overlap}\n')
